@@ -9,6 +9,6 @@ Python solution created as per the python developer challenge.pdf
 Upon reaching the terminal state “Z”, the server moves back to the initial state “A” and respond to the client with both “Z” and “A”.
 
 #### ACTUAL: 
-Sometimes the results after terminal state return only initial state and then two states next and sometimes they return two states straight away (ie initial state and another state).
+Sometimes the results after terminal state return only initial state (ie "A\<LF\>") and then two states on next query (eg "L\<LF\>B\<LF\>") and sometimes it returns two states straight away (ie initial state and another state "A\<LF\>L\<LF\>").
 
-#### The solution should work for both published and actual behaviour (untested for published).
+#### The solution should work for both the published and actual behaviours (untested for published).
