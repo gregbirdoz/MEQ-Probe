@@ -1,0 +1,105 @@
+digraph finite_state_machine {
+	rankdir=TB size="8,5"
+	node [shape=circle]
+	A
+	A -> U [label=2]
+	A -> U [label=1]
+	A -> S [label=3]
+	U
+	U -> E [label=1]
+	U -> C [label=2]
+	U -> C [label=3]
+	E
+	E -> X [label=2]
+	E -> Z [label=3]
+	E -> Q [label=1]
+	X
+	X -> C [label=2]
+	X -> J [label=1]
+	X -> C [label=3]
+	C
+	C -> U [label=3]
+	C -> K [label=1]
+	C -> P [label=2]
+	K
+	K -> V [label=3]
+	K -> J [label=2]
+	K -> J [label=1]
+	V
+	V -> F [label=1]
+	V -> O [label=2]
+	V -> B [label=3]
+	F
+	F -> Y [label=1]
+	F -> J [label=3]
+	F -> Y [label=2]
+	Y
+	Y -> T [label=1]
+	Y -> Q [label=2]
+	Y -> K [label=3]
+	T
+	T -> P [label=3]
+	T -> U [label=1]
+	T -> U [label=2]
+	P
+	P -> R [label=1]
+	P -> K [label=2]
+	P -> G [label=3]
+	R
+	R -> O [label=1]
+	R -> O [label=2]
+	R -> O [label=3]
+	O
+	O -> B [label=3]
+	O -> B [label=1]
+	O -> X [label=2]
+	B
+	B -> K [label=2]
+	B -> E [label=1]
+	B -> N [label=3]
+	Q
+	Q -> S [label=2]
+	Q -> R [label=1]
+	Q -> R [label=3]
+	S
+	S -> K [label=2]
+	S -> S [label=3]
+	S -> B [label=1]
+	J
+	J -> C [label=1]
+	J -> N [label=3]
+	J -> X [label=2]
+	N
+	N -> O [label=2]
+	N -> I [label=1]
+	N -> J [label=3]
+	G
+	G -> J [label=2]
+	G -> J [label=1]
+	G -> J [label=3]
+	I
+	I -> H [label=3]
+	I -> W [label=1]
+	I -> R [label=2]
+	H
+	H -> I [label=2]
+	H -> M [label=3]
+	H -> T [label=1]
+	W
+	W -> I [label=1]
+	W -> K [label=3]
+	W -> I [label=2]
+	M
+	M -> D [label=2]
+	M -> D [label=3]
+	M -> E [label=1]
+	D
+	D -> X [label=1]
+	D -> E [label=3]
+	D -> E [label=2]
+	Z
+	L
+	L -> M [label=1]
+	L -> F [label=2]
+	L -> O [label=3]
+}
