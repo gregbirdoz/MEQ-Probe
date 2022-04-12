@@ -1,6 +1,8 @@
 # MEQ-Probe Developer Challenge
 Python solution created as per the python developer challenge.pdf
 
+## A selection of generated state machine graphs can be found in the folder FSMs
+
 ### NOTE: behaviour of Finite State Machine differs from published FSM documentation:
 
 #### PUBLISHED: 
